@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg
