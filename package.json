@@ -9,9 +9,12 @@
     "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "dependencies": {
+    "@changesets/cli": "^2.27.7",
     "@nextui-org/button": "2.0.37",
     "@nextui-org/code": "2.0.32",
     "@nextui-org/input": "2.2.4",
